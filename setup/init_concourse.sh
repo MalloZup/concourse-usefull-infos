@@ -8,8 +8,8 @@ ssh-keygen -t rsa -f $conf_dir/worker_key -N ''
 ssh-keygen -t rsa -f $conf_dir/session_signing_key -N ''
 cp $conf_dir/worker_key.pub $conf_dir/authorized_worker_keys
 
-cp ../systemd/concourse.service /etc/systemd/system/
-cp ../systemd/concourse_worker.service /etc/systemd/system/
+cp systemd/concourse.service /etc/systemd/system/
+cp systemd/concourse_worker.service /etc/systemd/system/
 
 
 su postgres <<'EOF'
