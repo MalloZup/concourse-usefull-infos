@@ -1,0 +1,12 @@
+platform: linux
+
+image_resource:
+        type: docker-image
+        source: {repository: opensuse,   tag: "42.2"}
+
+
+inputs:
+- name: concourseMalloZup
+- name: sumaform
+run:
+        path: concourseMalloZup/pipelines-examples/reals/pipeline/bin/init.sh

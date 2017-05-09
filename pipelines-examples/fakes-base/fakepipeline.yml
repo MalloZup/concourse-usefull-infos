@@ -1,0 +1,76 @@
+resources:
+  - name: salt-opensuse
+    type: git
+    source:
+      uri: git@github.com:my-org/controller.git
+      branch: master
+
+  - name: worker
+    type: git
+    source:
+      uri: git@github.com:my-org/worker.git
+      branch: master
+
+  - name: integration-suite
+    type: git
+    source:
+      uri: git@github.com:my-org/integration-suite.git
+      branch: master
+
+  - name: release
+    type: git
+    source:
+      uri: git@github.com:my-org/release.git
+      branch: master
+
+  - name: final-release
+    type: s3
+    source:
+      bucket: concourse-releases
+      regex: release-(.*).tgz
+
+jobs:
+  - name: salt-suse-test
+    plan:
+      - get: salt-opensuse
+      - task: unit
+        file: controller/ci/mysql.yml
+
+  - name: salt-opensuse-test
+    plan:
+      - get: salt-opensuse
+      - task: unit
+        file: controller/ci/postgres.yml
+
+  - name: worker
+    plan:
+      - get: worker
+      - task: unit
+        file: worker/task.yml
+
+  - name: integration
+    plan:
+      - aggregate:
+          - get: integration-suite
+          - get: salt-opensuse
+            passed: [salt-suse-test, salt-opensuse-test]
+          - get: worker
+            passed: [worker]
+      - task: integration
+        file: integration-suite/task.yml
+
+  - name: deploy
+    serial: true
+    plan:
+      - aggregate:
+          - get: release
+          - get: salt-opensuse
+            passed: [integration]
+          - get: worker
+            passed: [integration]
+      - task: deploy
+        file: release/ci/deploy.yml
+      - put: final-release
+        params:
+          from: deploy/release/build/*.tgz
+

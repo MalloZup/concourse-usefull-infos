@@ -1,0 +1,15 @@
+[Unit]
+Description=Concourse CI server
+After=postgres.service
+
+[Service]
+Type=symple
+ExecStart=/usr/bin/concourse web \
+   --basic-auth-username linux \
+   --basic-auth-password linux \
+   --session-signing-key /etc/concourse/session_signing_key \
+   --tsa-host-key /etc/concourse/tsa_host_key \
+   --tsa-authorized-keys /etc/concourse/authorized_worker_keys 
+  --log-level=debug
+[Install]
+WantedBy=default.target

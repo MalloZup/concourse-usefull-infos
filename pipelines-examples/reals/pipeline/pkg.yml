@@ -1,0 +1,16 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+   repository: mbologna/saltstack-minion
+
+run:
+  path: sh
+  args:
+  - -exc
+  - |
+    whoami
+    env
+    ls /etc/
+    cat /etc/os-release

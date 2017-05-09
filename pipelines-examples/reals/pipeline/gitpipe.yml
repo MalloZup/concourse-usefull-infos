@@ -1,0 +1,30 @@
+resources:
+  - name: concourseMalloZup
+    type: git
+    source:
+      uri: https://github.com/MalloZup/opensuseconcourse.git
+      branch: master
+
+  - name: sumaform
+    type: git
+    source:
+      uri: https://github.com/moio/sumaform.git
+      branch: master
+
+jobs:
+  - name: init_sumaform
+    plan:
+      - aggregate:
+        - get: concourseMalloZup
+          trigger: true
+        - get: sumaform
+      - task: git-test
+        file: concourseMalloZup/pipelines-examples/reals/pipeline/build.yml
+
+  - name: run_tests
+    plan:
+      - get: concourseMalloZup
+        passed: [init_sumaform]
+      - task: pkg-test
+        file: concourseMalloZup/pipelines-examples/reals/pipeline/pkg.yml
+
