@@ -1,0 +1,1101 @@
+jobs:
+  - name: libao4-1.2.0-4.4.x86_64
+    plan:
+      - task: install-libao4-1.2.0-4.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libao4-1.2.0-4.4.x86_64"]
+  - name: libgsm1-1.0.13-27.5.x86_64
+    plan:
+      - task: install-libgsm1-1.0.13-27.5.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libgsm1-1.0.13-27.5.x86_64"]
+  - name: totem-pl-parser-lang-3.10.6-6.1.noarch
+    plan:
+      - task: install-totem-pl-parser-lang-3.10.6-6.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in totem-pl-parser-lang-3.10.6-6.1.noarch"]
+  - name: libbrasero-burn3-1-3.12.1-4.4.x86_64
+    plan:
+      - task: install-libbrasero-burn3-1-3.12.1-4.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libbrasero-burn3-1-3.12.1-4.4.x86_64"]
+  - name: libvlc6-3.0.0+git10453-1.36.x86_64
+    plan:
+      - task: install-libvlc6-3.0.0+git10453-1.36.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libvlc6-3.0.0+git10453-1.36.x86_64"]
+  - name: libjbig2-2.1-28.1.x86_64
+    plan:
+      - task: install-libjbig2-2.1-28.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libjbig2-2.1-28.1.x86_64"]
+  - name: libavahi-common3-32bit-0.6.32-1.2.x86_64
+    plan:
+      - task: install-libavahi-common3-32bit-0.6.32-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libavahi-common3-32bit-0.6.32-1.2.x86_64"]
+  - name: libavahi-gobject0-0.6.32-1.3.x86_64
+    plan:
+      - task: install-libavahi-gobject0-0.6.32-1.3.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libavahi-gobject0-0.6.32-1.3.x86_64"]
+  - name: yast2-proxy-3.1.6-4.2.noarch
+    plan:
+      - task: install-yast2-proxy-3.1.6-4.2.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in yast2-proxy-3.1.6-4.2.noarch"]
+  - name: libkms1-2.4.68-1.4.x86_64
+    plan:
+      - task: install-libkms1-2.4.68-1.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libkms1-2.4.68-1.4.x86_64"]
+  - name: libSDL_gfx15-2.0.25-4.3.x86_64
+    plan:
+      - task: install-libSDL_gfx15-2.0.25-4.3.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libSDL_gfx15-2.0.25-4.3.x86_64"]
+  - name: libexif12-0.6.21-11.4.x86_64
+    plan:
+      - task: install-libexif12-0.6.21-11.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libexif12-0.6.21-11.4.x86_64"]
+  - name: ruby-2.1-4.2.x86_64
+    plan:
+      - task: install-ruby-2.1-4.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in ruby-2.1-4.2.x86_64"]
+  - name: yast2-users-3.1.58-2.1.x86_64
+    plan:
+      - task: install-yast2-users-3.1.58-2.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in yast2-users-3.1.58-2.1.x86_64"]
+  - name: libgstrtsp-1_0-0-1.10.4-4.4.x86_64
+    plan:
+      - task: install-libgstrtsp-1_0-0-1.10.4-4.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libgstrtsp-1_0-0-1.10.4-4.4.x86_64"]
+  - name: aaa_base-13.2+git20140911.61c1681-23.1.x86_64
+    plan:
+      - task: install-aaa_base-13.2+git20140911.61c1681-23.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in aaa_base-13.2+git20140911.61c1681-23.1.x86_64"]
+  - name: libxcb-present0-1.11.1-2.25.x86_64
+    plan:
+      - task: install-libxcb-present0-1.11.1-2.25.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libxcb-present0-1.11.1-2.25.x86_64"]
+  - name: typelib-1_0-GVnc-1_0-0.6.0-1.1.x86_64
+    plan:
+      - task: install-typelib-1_0-GVnc-1_0-0.6.0-1.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in typelib-1_0-GVnc-1_0-0.6.0-1.1.x86_64"]
+  - name: libboost_date_time1_54_0-1.54.0-13.1.x86_64
+    plan:
+      - task: install-libboost_date_time1_54_0-1.54.0-13.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libboost_date_time1_54_0-1.54.0-13.1.x86_64"]
+  - name: libiso9660-10-0.93-5.4.x86_64
+    plan:
+      - task: install-libiso9660-10-0.93-5.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libiso9660-10-0.93-5.4.x86_64"]
+  - name: xf86-input-keyboard-1.8.1-7.4.x86_64
+    plan:
+      - task: install-xf86-input-keyboard-1.8.1-7.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in xf86-input-keyboard-1.8.1-7.4.x86_64"]
+  - name: totem-lang-3.20.1-1.25.noarch
+    plan:
+      - task: install-totem-lang-3.20.1-1.25.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in totem-lang-3.20.1-1.25.noarch"]
+  - name: libXi6-1.7.5-6.1.x86_64
+    plan:
+      - task: install-libXi6-1.7.5-6.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libXi6-1.7.5-6.1.x86_64"]
+  - name: libdb-4_8-4.8.30-31.51.x86_64
+    plan:
+      - task: install-libdb-4_8-4.8.30-31.51.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libdb-4_8-4.8.30-31.51.x86_64"]
+  - name: libjavascriptcoregtk-4_0-18-2.12.5-1.6.x86_64
+    plan:
+      - task: install-libjavascriptcoregtk-4_0-18-2.12.5-1.6.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libjavascriptcoregtk-4_0-18-2.12.5-1.6.x86_64"]
+  - name: gucharmap-lang-3.18.2-1.3.noarch
+    plan:
+      - task: install-gucharmap-lang-3.18.2-1.3.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in gucharmap-lang-3.18.2-1.3.noarch"]
+  - name: libgstreamer-0_10-0-0.10.36-22.3.x86_64
+    plan:
+      - task: install-libgstreamer-0_10-0-0.10.36-22.3.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libgstreamer-0_10-0-0.10.36-22.3.x86_64"]
+  - name: libavahi-client3-32bit-0.6.32-1.2.x86_64
+    plan:
+      - task: install-libavahi-client3-32bit-0.6.32-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libavahi-client3-32bit-0.6.32-1.2.x86_64"]
+  - name: cups-libs-1.7.5-7.10.x86_64
+    plan:
+      - task: install-cups-libs-1.7.5-7.10.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in cups-libs-1.7.5-7.10.x86_64"]
+  - name: libstorage-ruby-2.26.10-1.1.x86_64
+    plan:
+      - task: install-libstorage-ruby-2.26.10-1.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libstorage-ruby-2.26.10-1.1.x86_64"]
+  - name: libXpm4-3.5.11-7.1.x86_64
+    plan:
+      - task: install-libXpm4-3.5.11-7.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libXpm4-3.5.11-7.1.x86_64"]
+  - name: ruby2.1-rubygem-ruby-libvirt-0.7.0-4.1.x86_64
+    plan:
+      - task: install-ruby2.1-rubygem-ruby-libvirt-0.7.0-4.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in ruby2.1-rubygem-ruby-libvirt-0.7.0-4.1.x86_64"]
+  - name: libvdpau1-1.1.1-9.10.x86_64
+    plan:
+      - task: install-libvdpau1-1.1.1-9.10.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libvdpau1-1.1.1-9.10.x86_64"]
+  - name: libjpeg8-32bit-8.1.2-103.1.x86_64
+    plan:
+      - task: install-libjpeg8-32bit-8.1.2-103.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libjpeg8-32bit-8.1.2-103.1.x86_64"]
+  - name: cheese-lang-3.20.2-1.5.noarch
+    plan:
+      - task: install-cheese-lang-3.20.2-1.5.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in cheese-lang-3.20.2-1.5.noarch"]
+  - name: libbs2b0-3.1.0-13.1.x86_64
+    plan:
+      - task: install-libbs2b0-3.1.0-13.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libbs2b0-3.1.0-13.1.x86_64"]
+  - name: libdbusmenu-glib4-16.04.0-1.2.x86_64
+    plan:
+      - task: install-libdbusmenu-glib4-16.04.0-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libdbusmenu-glib4-16.04.0-1.2.x86_64"]
+  - name: libgck-modules-gnome-keyring-3.20.0-3.1.x86_64
+    plan:
+      - task: install-libgck-modules-gnome-keyring-3.20.0-3.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libgck-modules-gnome-keyring-3.20.0-3.1.x86_64"]
+  - name: libbz2-devel-1.0.6-32.53.x86_64
+    plan:
+      - task: install-libbz2-devel-1.0.6-32.53.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libbz2-devel-1.0.6-32.53.x86_64"]
+  - name: libldap-2_4-2-32bit-2.4.44-14.1.x86_64
+    plan:
+      - task: install-libldap-2_4-2-32bit-2.4.44-14.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libldap-2_4-2-32bit-2.4.44-14.1.x86_64"]
+  - name: mkfontdir-1.0.7-11.2.x86_64
+    plan:
+      - task: install-mkfontdir-1.0.7-11.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in mkfontdir-1.0.7-11.2.x86_64"]
+  - name: libunique-1_0-0-1.1.6-29.5.x86_64
+    plan:
+      - task: install-libunique-1_0-0-1.1.6-29.5.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libunique-1_0-0-1.1.6-29.5.x86_64"]
+  - name: libxcb1-1.11.1-2.25.x86_64
+    plan:
+      - task: install-libxcb1-1.11.1-2.25.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libxcb1-1.11.1-2.25.x86_64"]
+  - name: libnfs-1.10.0-1.2.x86_64
+    plan:
+      - task: install-libnfs-1.10.0-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libnfs-1.10.0-1.2.x86_64"]
+  - name: gnome-shell-classic-3.20.1-4.1.noarch
+    plan:
+      - task: install-gnome-shell-classic-3.20.1-4.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in gnome-shell-classic-3.20.1-4.1.noarch"]
+  - name: libXmuu1-1.1.2-6.19.x86_64
+    plan:
+      - task: install-libXmuu1-1.1.2-6.19.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libXmuu1-1.1.2-6.19.x86_64"]
+  - name: perl-XML-Simple-2.20-7.2.noarch
+    plan:
+      - task: install-perl-XML-Simple-2.20-7.2.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in perl-XML-Simple-2.20-7.2.noarch"]
+  - name: typelib-1_0-GnomeBluetooth-1_0-3.20.0-1.1.x86_64
+    plan:
+      - task: install-typelib-1_0-GnomeBluetooth-1_0-3.20.0-1.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in typelib-1_0-GnomeBluetooth-1_0-3.20.0-1.1.x86_64"]
+  - name: libXt6-32bit-1.1.5-2.19.x86_64
+    plan:
+      - task: install-libXt6-32bit-1.1.5-2.19.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libXt6-32bit-1.1.5-2.19.x86_64"]
+  - name: gcc48-4.8.5-22.1.x86_64
+    plan:
+      - task: install-gcc48-4.8.5-22.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in gcc48-4.8.5-22.1.x86_64"]
+  - name: adwaita-icon-theme-3.20-2.2.noarch
+    plan:
+      - task: install-adwaita-icon-theme-3.20-2.2.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in adwaita-icon-theme-3.20-2.2.noarch"]
+  - name: python-setuptools-20.2.2-2.1.noarch
+    plan:
+      - task: install-python-setuptools-20.2.2-2.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in python-setuptools-20.2.2-2.1.noarch"]
+  - name: lsof-4.89-4.2.x86_64
+    plan:
+      - task: install-lsof-4.89-4.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in lsof-4.89-4.2.x86_64"]
+  - name: pstoedit-3.70-3.32.x86_64
+    plan:
+      - task: install-pstoedit-3.70-3.32.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in pstoedit-3.70-3.32.x86_64"]
+  - name: joe-3.7-31.19.x86_64
+    plan:
+      - task: install-joe-3.7-31.19.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in joe-3.7-31.19.x86_64"]
+  - name: python3-cups-1.9.72-4.2.x86_64
+    plan:
+      - task: install-python3-cups-1.9.72-4.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in python3-cups-1.9.72-4.2.x86_64"]
+  - name: yast2-mail-3.1.9-1.2.noarch
+    plan:
+      - task: install-yast2-mail-3.1.9-1.2.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in yast2-mail-3.1.9-1.2.noarch"]
+  - name: qdox-1.12.1-11.40.noarch
+    plan:
+      - task: install-qdox-1.12.1-11.40.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in qdox-1.12.1-11.40.noarch"]
+  - name: which-2.20-6.54.x86_64
+    plan:
+      - task: install-which-2.20-6.54.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in which-2.20-6.54.x86_64"]
+  - name: libvirglrenderer0-0.5.0-2.2.x86_64
+    plan:
+      - task: install-libvirglrenderer0-0.5.0-2.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libvirglrenderer0-0.5.0-2.2.x86_64"]
+  - name: libwebkitgtk2-lang-2.4.11-2.10.noarch
+    plan:
+      - task: install-libwebkitgtk2-lang-2.4.11-2.10.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libwebkitgtk2-lang-2.4.11-2.10.noarch"]
+  - name: libavcodec56-2.8.20170208.523da8eac1-2.2.x86_64
+    plan:
+      - task: install-libavcodec56-2.8.20170208.523da8eac1-2.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libavcodec56-2.8.20170208.523da8eac1-2.2.x86_64"]
+  - name: google-noto-fonts-doc-20151215-2.3.noarch
+    plan:
+      - task: install-google-noto-fonts-doc-20151215-2.3.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in google-noto-fonts-doc-20151215-2.3.noarch"]
+  - name: libldb1-1.1.26-1.5.x86_64
+    plan:
+      - task: install-libldb1-1.1.26-1.5.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libldb1-1.1.26-1.5.x86_64"]
+  - name: kmod-17-8.1.x86_64
+    plan:
+      - task: install-kmod-17-8.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in kmod-17-8.1.x86_64"]
+  - name: ed-1.9-4.4.x86_64
+    plan:
+      - task: install-ed-1.9-4.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in ed-1.9-4.4.x86_64"]
+  - name: ruby2.1-rubygem-cheetah-0.5.0-1.2.x86_64
+    plan:
+      - task: install-ruby2.1-rubygem-cheetah-0.5.0-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in ruby2.1-rubygem-cheetah-0.5.0-1.2.x86_64"]
+  - name: gnome-font-viewer-lang-3.20.2-1.1.noarch
+    plan:
+      - task: install-gnome-font-viewer-lang-3.20.2-1.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in gnome-font-viewer-lang-3.20.2-1.1.noarch"]
+  - name: libreoffice-l10n-en-5.2.3.3-16.1.noarch
+    plan:
+      - task: install-libreoffice-l10n-en-5.2.3.3-16.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libreoffice-l10n-en-5.2.3.3-16.1.noarch"]
+  - name: sash-3.8-3.3.x86_64
+    plan:
+      - task: install-sash-3.8-3.3.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in sash-3.8-3.3.x86_64"]
+  - name: kpartx-0.6.2+suse20161025.b80f406-1.1.x86_64
+    plan:
+      - task: install-kpartx-0.6.2+suse20161025.b80f406-1.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in kpartx-0.6.2+suse20161025.b80f406-1.1.x86_64"]
+  - name: grub2-x86_64-efi-2.02~beta2-87.1.x86_64
+    plan:
+      - task: install-grub2-x86_64-efi-2.02~beta2-87.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in grub2-x86_64-efi-2.02~beta2-87.1.x86_64"]
+  - name: libavdevice57-3.2.20170210.d4b731e271-1.2.x86_64
+    plan:
+      - task: install-libavdevice57-3.2.20170210.d4b731e271-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libavdevice57-3.2.20170210.d4b731e271-1.2.x86_64"]
+  - name: man-pages-posix-2013a-4.1.noarch
+    plan:
+      - task: install-man-pages-posix-2013a-4.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in man-pages-posix-2013a-4.1.noarch"]
+  - name: python-2.7.12-24.1.x86_64
+    plan:
+      - task: install-python-2.7.12-24.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in python-2.7.12-24.1.x86_64"]
+  - name: libboost_random1_54_0-1.54.0-13.1.x86_64
+    plan:
+      - task: install-libboost_random1_54_0-1.54.0-13.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libboost_random1_54_0-1.54.0-13.1.x86_64"]
+  - name: libMagickCore-6_Q16-3-6.9.7.5-284.1.x86_64
+    plan:
+      - task: install-libMagickCore-6_Q16-3-6.9.7.5-284.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libMagickCore-6_Q16-3-6.9.7.5-284.1.x86_64"]
+  - name: pulseaudio-utils-32bit-9.0-1.2.x86_64
+    plan:
+      - task: install-pulseaudio-utils-32bit-9.0-1.2.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in pulseaudio-utils-32bit-9.0-1.2.x86_64"]
+  - name: AppStream-0.10.0-1.1.x86_64
+    plan:
+      - task: install-AppStream-0.10.0-1.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in AppStream-0.10.0-1.1.x86_64"]
+  - name: evince-lang-3.20.1-1.5.noarch
+    plan:
+      - task: install-evince-lang-3.20.1-1.5.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in evince-lang-3.20.1-1.5.noarch"]
+  - name: libpq5-9.4.9-8.1.x86_64
+    plan:
+      - task: install-libpq5-9.4.9-8.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libpq5-9.4.9-8.1.x86_64"]
+  - name: shotwell-0.23.2-1.1.x86_64
+    plan:
+      - task: install-shotwell-0.23.2-1.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in shotwell-0.23.2-1.1.x86_64"]
+  - name: net-tools-1.60-767.55.x86_64
+    plan:
+      - task: install-net-tools-1.60-767.55.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in net-tools-1.60-767.55.x86_64"]
+  - name: perl-IO-Socket-SSL-1.962-5.2.noarch
+    plan:
+      - task: install-perl-IO-Socket-SSL-1.962-5.2.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in perl-IO-Socket-SSL-1.962-5.2.noarch"]
+  - name: typelib-1_0-PackageKitGlib-1_0-1.1.3-2.3.x86_64
+    plan:
+      - task: install-typelib-1_0-PackageKitGlib-1_0-1.1.3-2.3.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in typelib-1_0-PackageKitGlib-1_0-1.1.3-2.3.x86_64"]
+  - name: libappstream-builder7-0.4.1-9.1.x86_64
+    plan:
+      - task: install-libappstream-builder7-0.4.1-9.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libappstream-builder7-0.4.1-9.1.x86_64"]
+  - name: libxcb-xprint0-1.11.1-2.25.x86_64
+    plan:
+      - task: install-libxcb-xprint0-1.11.1-2.25.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libxcb-xprint0-1.11.1-2.25.x86_64"]
+  - name: libXfont1-1.5.1-8.4.x86_64
+    plan:
+      - task: install-libXfont1-1.5.1-8.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libXfont1-1.5.1-8.4.x86_64"]
+  - name: libndr0-4.2.4-24.1.x86_64
+    plan:
+      - task: install-libndr0-4.2.4-24.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libndr0-4.2.4-24.1.x86_64"]
+  - name: bash-completion-2.1-9.22.noarch
+    plan:
+      - task: install-bash-completion-2.1-9.22.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in bash-completion-2.1-9.22.noarch"]
+  - name: perl-LWP-Protocol-https-6.04-8.2.noarch
+    plan:
+      - task: install-perl-LWP-Protocol-https-6.04-8.2.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in perl-LWP-Protocol-https-6.04-8.2.noarch"]
+  - name: gnome-settings-daemon-lang-3.20.1-8.1.noarch
+    plan:
+      - task: install-gnome-settings-daemon-lang-3.20.1-8.1.noarch
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in gnome-settings-daemon-lang-3.20.1-8.1.noarch"]
+  - name: docker-17.04.0_ce-191.7.x86_64
+    plan:
+      - task: install-docker-17.04.0_ce-191.7.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in docker-17.04.0_ce-191.7.x86_64"]
+  - name: libxml2-2-2.9.4-1.4.x86_64
+    plan:
+      - task: install-libxml2-2-2.9.4-1.4.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libxml2-2-2.9.4-1.4.x86_64"]
+  - name: git-core-2.10.0-1.5.x86_64
+    plan:
+      - task: install-git-core-2.10.0-1.5.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in git-core-2.10.0-1.5.x86_64"]
+  - name: libvirt-daemon-driver-libxl-2.0.0-9.1.x86_64
+    plan:
+      - task: install-libvirt-daemon-driver-libxl-2.0.0-9.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libvirt-daemon-driver-libxl-2.0.0-9.1.x86_64"]
+  - name: inkscape-extensions-extra-0.92.0-8.1.x86_64
+    plan:
+      - task: install-inkscape-extensions-extra-0.92.0-8.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in inkscape-extensions-extra-0.92.0-8.1.x86_64"]
+  - name: libtirpc-netconfig-1.0.1-1.5.x86_64
+    plan:
+      - task: install-libtirpc-netconfig-1.0.1-1.5.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libtirpc-netconfig-1.0.1-1.5.x86_64"]
+  - name: librdmacm1-1.0.19.1-3.6.x86_64
+    plan:
+      - task: install-librdmacm1-1.0.19.1-3.6.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in librdmacm1-1.0.19.1-3.6.x86_64"]
+  - name: libndr-nbt0-4.2.4-24.1.x86_64
+    plan:
+      - task: install-libndr-nbt0-4.2.4-24.1.x86_64
+        config:
+         platform: linux
+         image_resource:
+           type: docker-image
+           source: {repository: opensuse}
+         run:
+           path: zypper
+           args: ["-n in libndr-nbt0-4.2.4-24.1.x86_64"]
